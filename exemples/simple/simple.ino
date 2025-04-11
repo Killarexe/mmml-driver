@@ -390,6 +390,6 @@ void setup() {
 }
 
 void loop() {
-  sleep_us(10); //If your using an Arduino remove this line.
+  sleep_us(12); //If your using an Arduino remove this line.
   mmml_driver_update(&driver);
 }
