@@ -11,8 +11,8 @@
 *                 wave and a percussive sampler or noise
 *                 generator.
 *
-*                 Needs to be updated every 100 Microseconds or 0.1ms
-*                 or 10kHz.
+*                 Needs to be updated every 120 Microseconds or 0.12ms
+*                 or 8.3kHz.
 *
 *                 Eight different duty cycles possible:
 *                 50%, 25%, 12.5%, 6.25%, 3.125%, 1.5625%,
@@ -272,7 +272,7 @@ uint8_t mmml_driver_update(MMMLDriver* driver) {
               break;
               
             case 3: // tempo
-              driver->tick_speed = driver->buffer3 << 5;
+              driver->tick_speed = driver->buffer3 << 4;
               driver->data_pointer[voice] += 2;
               break;
             
